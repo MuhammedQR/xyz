@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b1220;
+  --fg: #f4f7fb;
+  --brand-primary: 198 100% 53%; /* أزرق */
+  --brand-cta: 38 92% 56%;       /* عنبري */
+  --content: 210 40% 96%;        /* لون نقاط الشبكة */
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+.container-narrow {
+  @apply max-w-5xl mx-auto px-4;
+}
+
+.section {
+  @apply py-16 md:py-24;
+}
+
+.card {
+  @apply bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur;
+}
+
+.btn-primary {
+  @apply inline-flex items-center gap-2 rounded-2xl px-5 py-3 bg-brand-500 text-white hover:bg-brand-600 transition;
+}
+
+.btn-outline {
+  @apply inline-flex items-center gap-2 rounded-2xl px-5 py-3 border border-white/20 hover:bg-white/10 transition;
+}
