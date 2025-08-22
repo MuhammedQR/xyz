@@ -170,22 +170,92 @@
       }
     ]
   },
-"about": {
+  "about": {
     "title": "About Us",
     "intro": "XYZ was founded to deliver integrated solutions for oil & gas facilities with a focus on quality, safety and sustainability. Our team combines engineering and management expertise to deliver successful projects across the region.",
     "imageAlt": "XYZ team during on-site commissioning",
     "items": [
-      { "h": "Our Vision", "p": "To be the most trusted industrial partner in the regional oil & gas sector." },
-      { "h": "Our Mission", "p": "Deliver reliable and efficient solutions that bring tangible value to our clients." },
-      { "h": "Our Values", "p": "Safety – Professionalism – Transparency – Innovation." }
+      {
+        "h": "Our Vision",
+        "p": "To be the most trusted industrial partner in the regional oil & gas sector."
+      },
+      {
+        "h": "Our Mission",
+        "p": "Deliver reliable and efficient solutions that bring tangible value to our clients."
+      },
+      {
+        "h": "Our Values",
+        "p": "Safety – Professionalism – Transparency – Innovation."
+      }
     ],
     "timelineTitle": "Company Milestones",
     "timelineIntro": "A snapshot of our key achievements and the growth of our capabilities.",
     "timeline": [
-      { "year": "2015", "title": "Launch", "text": "Company founded and core engineering team formed." },
-      { "year": "2018", "title": "First EPC Contract", "text": "Pipeline project delivered on schedule." },
-      { "year": "2021", "title": "Regional Expansion", "text": "New operations office and expanded O&M services." },
-      { "year": "2024", "title": "HSE Accreditations", "text": "Strengthened ISO framework and advanced safety initiatives." }
+      {
+        "year": "2015",
+        "title": "Launch",
+        "text": "Company founded and core engineering team formed."
+      },
+      {
+        "year": "2018",
+        "title": "First EPC Contract",
+        "text": "Pipeline project delivered on schedule."
+      },
+      {
+        "year": "2021",
+        "title": "Regional Expansion",
+        "text": "New operations office and expanded O&M services."
+      },
+      {
+        "year": "2024",
+        "title": "HSE Accreditations",
+        "text": "Strengthened ISO framework and advanced safety initiatives."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "intro": "Fill out the form and our team will get back to you shortly.",
+    "name": "Full name",
+    "email": "Email address",
+    "phone": "Phone (optional)",
+    "message": "Your message",
+    "send": "Send",
+    "sending": "Sending...",
+    "sent": "Submitted successfully. We’ll be in touch soon.",
+    "error": "Couldn’t submit. Please try again."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "XYZ respects your privacy. We use your contact information only to respond to your inquiries and deliver our services. We do not share your data with third parties unless legally required or with your consent."
+  },
+  "projects": {
+    "title": "Projects",
+    "list": [
+      { "title": "Gas Processing Plant", "location": "UAE", "year": "2023", "summary": "Design & build of processing units, 150 MMSCFD capacity." },
+      { "title": "Offshore Pipeline", "location": "Saudi Arabia", "year": "2024", "summary": "Supervision and installation of a 45-km subsea pipeline." },
+      { "title": "Oil Storage Depot", "location": "Oman", "year": "2022", "summary": "Supply & installation of metering and safety systems." }
+    ]
+  },
+  "servicesPage": {
+    "title": "Services",
+    "items": [
+      {
+        "title": "Facilities Engineering & Design",
+        "desc": "Engineering studies and detailed design for oil & gas facilities with standards-compliant materials and equipment selection."
+      },
+      {
+        "title": "Project Management, Operations & Maintenance",
+        "desc": "Managing the full project lifecycle from planning and execution to operations, preventive and corrective maintenance."
+      },
+      {
+        "title": "HSE & Compliance",
+        "desc": "Safety management systems, risk assessments, emergency procedures and continuous workforce training."
+      },
+      {
+        "title": "Logistics & Supply Chain",
+        "desc": "Sourcing, storage and shipping of equipment and materials using best practices to ensure continuity."
+      }
     ]
   }
 }

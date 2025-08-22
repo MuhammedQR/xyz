@@ -1,10 +1,5 @@
 {
-  "/api/contact/route": "app/api/contact/route.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/[locale]/contact/page": "app/[locale]/contact/page.js",
   "/[locale]/page": "app/[locale]/page.js",
-  "/[locale]/projects/page": "app/[locale]/projects/page.js",
-  "/[locale]/privacy/page": "app/[locale]/privacy/page.js",
-  "/[locale]/services/page": "app/[locale]/services/page.js",
-  "/[locale]/about/page": "app/[locale]/about/page.js"
+  "/[locale]/contact/page": "app/[locale]/contact/page.js",
+  "/[locale]/services/page": "app/[locale]/services/page.js"
 }
