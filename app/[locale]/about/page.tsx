@@ -2,7 +2,32 @@
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import Timeline from '@/components/Timeline';
+import type { Metadata } from 'next';
+import { SITE_URL, localizedUrl } from '@/lib/seo';
 
+export async function generateMetadata({ params:{locale} }:{params:{locale:'ar'|'en'}}): Promise<Metadata> {
+  const t = await getTranslations({locale, namespace:'about'});
+  const path = '/about';
+  return {
+    title: t('title'),
+    description: t('intro'),
+    alternates: {
+      canonical: localizedUrl(path, locale),
+      languages: {
+        ar: localizedUrl(path,'ar'),
+        en: localizedUrl(path,'en')
+      }
+    },
+    openGraph: {
+      url: localizedUrl(path, locale),
+      title: t('title'),
+      description: t('intro'),
+      siteName: 'XYZ Oil Facilities',
+      images: [{ url: '/images/about-hero.jpg', width: 1600, height: 600 }]
+    },
+    twitter: { card: 'summary_large_image' }
+  };
+}
 export const dynamic = 'force-static';
 
 export default async function AboutPage({

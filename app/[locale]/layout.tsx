@@ -15,8 +15,17 @@ export function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yourdomain.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://xyz-xi-gilt.vercel.app"),
+  title: { default: "XYZ Oil Facilities", template: "%s | XYZ Oil Facilities" },
+  description: "Integrated EPC, O&M and HSE for oil & gas facilities.",
   icons: { icon: "/favicon.ico" },
+  openGraph: {
+    type: "website",
+    siteName: "XYZ Oil Facilities",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }]
+  },
+  twitter: { card: "summary_large_image" },
+  robots: { index: true, follow: true }
 };
 
 export default async function LocaleLayout({
@@ -30,7 +39,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
       <body>
-        {/* <SEOProvider /> */}
+        <SEOProvider locale={locale} />
         {/* خلفية تفاعلية (اختياري) */}
         <HeroFX />
         <div className="relative z-10">
