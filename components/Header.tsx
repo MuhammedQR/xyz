@@ -54,7 +54,7 @@ export default function Header() {
         {/* الشعار */}
         <Link href={withLocale('/')} className="text-lg font-semibold">
           {/* يمكنك استبدال النص باللوغو لاحقًا */}
-          شركة <span className="text-brand-400">XYZ</span>
+          XYZ <span className="text-brand-400">SOLUTIONS</span>
         </Link>
 
         {/* أزرار الموبايل */}
