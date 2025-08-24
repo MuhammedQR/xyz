@@ -1,15 +1,23 @@
 {
   "nav": {
     "home": "Home",
-    "about": "About Us",
+    "about": "About",
     "services": "Services",
     "projects": "Projects",
     "contact": "Contact",
-    "quote": "Request a Quote",
-    "lang": "العربية"
+    "quote": "Get a Quote",
+    "lang": "العربية",
+    "servicesMenu": {
+      "epc": "Integrated EPC",
+      "om": "Operations & Maintenance",
+      "hse": "HSE & Compliance",
+      "pipelines": "Pipelines & Tanks",
+      "scada": "Instrumentation & SCADA",
+      "supply": "Logistics & Supply Chain"
+    }
   },
   "hero": {
-    "title": "Your trusted partner in <highlight>Oil & Gas Facilities</highlight>",
+    "title": "Your trusted partner in <b>Oil & Gas Facilities</b>",
     "subtitle": "Construction, operation and maintenance of oil facilities with the highest safety and quality standards, backed by projects across the Middle East.",
     "contact": "Contact Us",
     "projects": "View Our Projects",
@@ -232,9 +240,24 @@
   "projects": {
     "title": "Projects",
     "list": [
-      { "title": "Gas Processing Plant", "location": "UAE", "year": "2023", "summary": "Design & build of processing units, 150 MMSCFD capacity." },
-      { "title": "Offshore Pipeline", "location": "Saudi Arabia", "year": "2024", "summary": "Supervision and installation of a 45-km subsea pipeline." },
-      { "title": "Oil Storage Depot", "location": "Oman", "year": "2022", "summary": "Supply & installation of metering and safety systems." }
+      {
+        "title": "Gas Processing Plant",
+        "location": "UAE",
+        "year": "2023",
+        "summary": "Design & build of processing units, 150 MMSCFD capacity."
+      },
+      {
+        "title": "Offshore Pipeline",
+        "location": "Saudi Arabia",
+        "year": "2024",
+        "summary": "Supervision and installation of a 45-km subsea pipeline."
+      },
+      {
+        "title": "Oil Storage Depot",
+        "location": "Oman",
+        "year": "2022",
+        "summary": "Supply & installation of metering and safety systems."
+      }
     ]
   },
   "servicesPage": {
@@ -257,5 +280,11 @@
         "desc": "Sourcing, storage and shipping of equipment and materials using best practices to ensure continuity."
       }
     ]
+  },
+  "notFound": {
+    "title": "Page not found",
+    "desc": "The page may have been moved or deleted. Check the URL or return to the homepage.",
+    "home": "Back to Home",
+    "contact": "Contact Us"
   }
 }

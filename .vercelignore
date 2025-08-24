@@ -1,23 +1,17 @@
 # Dependencies
 node_modules/
 .pnpm-store/
-.pnp.*
 .yarn/
-.yarnrc.yml
 
 # Build outputs
 .next/
 out/
 dist/
-.turbo/
 .cache/
+.turbo/
 .parcel-cache/
-*.tsbuildinfo
 
-# Vercel local files
-.vercel/
-
-# Tests & reports
+# Tests & tooling
 coverage/
 reports/
 cypress/
@@ -25,22 +19,23 @@ playwright-report/
 *.spec.*
 *.test.*
 
-# Logs
+# Git & editors
+.git/
+.github/
+.gitattributes
+.vscode/
+.idea/
+
+# Logs & OS junk
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+.DS_Store
+Thumbs.db
 
-# Env (استخدم متغيرات Vercel بدل رفعها)
+# Env files (استخدم متغيرات بيئة Vercel بدل رفع ملفات .env)
 .env
 .env.*
 !.env.example
-
-# Editors & OS
-.vscode/
-.idea/
-*.swp
-.DS_Store
-Thumbs.db
-.gitattributes
